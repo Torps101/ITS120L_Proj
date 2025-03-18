@@ -6,9 +6,9 @@ if (!isset($_SESSION['teacher_id'])) {
     header("Location: teacher_login.php");
     exit();
 }
-$beginner_students = mysqli_query($conn, "SELECT * FROM students WHERE category='beginner'");
-$intermediate_students = mysqli_query($conn, "SELECT * FROM students WHERE category='intermediate'");
-$experienced_students = mysqli_query($conn, "SELECT * FROM students WHERE category='experienced'");
+$beginner_students = mysqli_query($conn, "SELECT * FROM students WHERE category='Beginner'");
+$intermediate_students = mysqli_query($conn, "SELECT * FROM students WHERE category='Intermediate'");
+$experienced_students = mysqli_query($conn, "SELECT * FROM students WHERE category='Experienced'");
 
 
 ?>
@@ -250,7 +250,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="student-list" id="Intermediate">
                     <button class="add-task-level" data-level="Intermediate">Add Task for Intermediate Level Students</button>
 
-                    <?php while($student = mysqli_fetch_assoc($beginner_students)) { ?>
+                    <?php while($student = mysqli_fetch_assoc($intermediate_students)) { ?>
                         <div class="student-card">
                             <div class="student-info">
                                 <h3><?php echo htmlspecialchars($student['fullname']); ?></h3>
@@ -270,7 +270,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="student-list" id="Experienced">
                     <button class="add-task-level" data-level="Experienced">Add Task for Experienced Level Students</button>
 
-                    <?php while($student = mysqli_fetch_assoc($beginner_students)) { ?>
+                    <?php while($student = mysqli_fetch_assoc($experienced_students)) { ?>
                         <div class="student-card">
                             <div class="student-info">
                                 <h3><?php echo htmlspecialchars($student['fullname']); ?></h3>

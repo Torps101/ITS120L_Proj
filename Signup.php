@@ -29,6 +29,7 @@
 
         <div class="links">
             <a href="login.php">Already have an account?</a>
+
         </div>
     </div>
 
