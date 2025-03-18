@@ -1,0 +1,129 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111827;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #111827;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        .subtitle {
+            color:rgb(255, 255, 255);
+            font-size: 14px;
+        }
+        .icons span {
+            margin-left: 15px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            background: #111827;
+        }
+        nav button {
+            background: #22D3EE;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        nav input {
+            padding: 8px;
+            border: 1px solid #CBD5E1;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        main {
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .category {
+            width: 30%;
+            background: #22D3EE;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .category h3 {
+            text-align: center;
+            cursor: pointer;
+            background: #0EA5E9;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .student-list {
+            display: none;
+            margin-top: 10px;
+        }
+        .student-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .student-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .coins {
+            font-weight: bold;
+            color: #FACC15;
+        }
+        .tasks {
+            margin-top: 10px;
+        }
+        .tasks ul {
+            list-style: none;
+            padding: 0;
+        }
+        .tasks li {
+            background: #22D3EE;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .task-coins {
+            font-weight: bold;
+            color: #FACC15;
+        }
+        .add-task, .add-task-level {
+            background: #22D3EE;
+            border: none;
+            padding: 8px 12px;
+            color: white;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        h2 {
+  color: white;
+}
+    
