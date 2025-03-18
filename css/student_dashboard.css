@@ -111,7 +111,7 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-			color: white;
+			color: black;
         }
 
         .tasks li button {
